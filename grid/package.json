@@ -1,0 +1,26 @@
+{
+  "name": "openfin-fdc3-grid-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnman/openfin_fdc3_grid.git"
+  },
+  "keywords": [],
+  "author": "OpenFin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnman/openfin_fdc3_grid/issues"
+  },
+  "homepage": "https://github.com/johnman/openfin_fdc3_grid#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "@types/openfin": "49.0.0"
+  }
+}

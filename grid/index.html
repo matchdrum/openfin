@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AG GRID & FDC3 Sample</title>
+    <script src="components/openfin-link.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <h1>This is a basic example of two OpenFin apps</h1>
+    <p>
+      One app (the publisher) lists instruments in a grid and publishes a row
+      selection to the fdc3 message bus.:
+    </p>
+    <p>
+      The other app listens to the fdc3 message bus and adds instrument
+      selections to a grid.
+    </p>
+    <p>Shown below:</p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/grid.fdc3.publisher.json"
+        >Launch OpenFin FDC3 Publisher App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/grid.fdc3.listener.json"
+        >Launch OpenFin FDC3 Listener App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fin://localhost:5000/config/local.grid.fdc3.publisher.json"
+        >Launch Local OpenFin FDC3 Publisher App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fin://localhost:5000/config/local.grid.fdc3.listener.json"
+        >Launch Local OpenFin FDC3 Listener App</openfin-link
+      >
+    </p>
+
+    <h1>This is a basic example of two OpenFin apps using the News Intent</h1>
+    <p>
+      One app (the publisher) lists instruments in a grid and uses a row
+      selection to raise an fdc3 news intent asking for information for that
+      instrument:
+    </p>
+    <p>
+      The other app listens to the fdc3 News Intent and adds instrument
+      selections to a grid to indicate this is what someone wants to see news
+      about.
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/fdc3.news.listener.json"
+        >Launch OpenFin FDC3 News Intent Listener App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/fdc3.news.publisher.json"
+        >Launch OpenFin FDC3 News Intent Raiser App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fin://localhost:5000/config/local.fdc3.news.listener.json"
+        >Launch Local OpenFin FDC3 News Intent Listener App</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fin://localhost:5000/config/local.fdc3.news.publisher.json"
+        >Launch Local OpenFin FDC3 News Intent Raiser App</openfin-link
+      >
+    </p>
+  </body>
+</html>
