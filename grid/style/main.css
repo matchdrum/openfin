@@ -3,3 +3,29 @@ body {
   background-color: black;
   color: white;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: auto;
+  right: 24px;
+  bottom: 0px;
+
+  background-color: bisque;
+  width: 92px;
+}
+
+
+.boxer {
+  margin: 0 0 0 auto;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  top: auto;
+  right: 24px;
+  bottom: 24px;
+
+  background-color: bisque;
+  width: 320px;
+}
