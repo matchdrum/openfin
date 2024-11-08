@@ -1,0 +1,97 @@
+{
+	"runtime": {
+		"arguments": "--v=1 --inspect",
+		"version": "38.126.83.79"
+	},
+	"platform": {
+		"enableBeforeUnload": true,
+		"uuid": "container-platform-starter",
+		"icon": "http://localhost:5050/favicon.ico",
+		"autoShow": false,
+		"providerUrl": "http://localhost:5050/html/provider.html"
+	},
+	"snapshot": {
+		"windows": [
+			{
+				"name": "main-window",
+				"layout": {
+					"content": [
+						{
+							"type": "row",
+							"content": [
+								{
+									"type": "stack",
+									"content": [
+										{
+											"type": "component",
+											"title": "Narzędzia",
+											"componentName": "view",
+											"componentState": {
+												"url": "http://localhost:5050/tools/app1.html",
+												"name": "tools-app1"
+											},
+											"tabConfig": {
+												"title": "Narzędzia"
+											}
+										}
+									]
+								},
+								{
+									"type": "stack",
+									"content": [
+										{
+											"type": "row",
+											"content": [
+												{
+													"type": "component",
+													"title": "Bankowość - Sub-App 1",
+													"componentName": "view",
+													"componentState": {
+														"url": "http://localhost:5050/banking/subapp1.html",
+														"name": "banking-subapp1"
+													},
+													"tabConfig": {
+														"title": "Bankowość - Sub-App 1"
+													}
+												},
+												{
+													"type": "component",
+													"title": "Bankowość - Sub-App 2",
+													"componentName": "view",
+													"componentState": {
+														"url": "http://localhost:5050/banking/subapp2.html",
+														"name": "banking-subapp2"
+													},
+													"tabConfig": {
+														"title": "Bankowość - Sub-App 2"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "stack",
+									"content": [
+										{
+											"type": "component",
+											"title": "Nowa Zakładka",
+											"componentName": "view",
+											"componentState": {
+												"url": "http://localhost:5050/tools/app2.html",
+												"name": "tools-app2"
+											},
+											"tabConfig": {
+												"title": "Nowa Zakładka"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}
