@@ -1,0 +1,3 @@
+cscript writeKey.vbs "HKEY_CURRENT_USER\Software\TestKey" "TestValue" "TestData"
+
+
