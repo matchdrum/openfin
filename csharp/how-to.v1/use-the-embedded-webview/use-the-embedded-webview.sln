@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "use-the-embedded-webview", "use-the-embedded-webview.csproj", "{DAB6617C-FAC5-450E-9044-0768F67FE709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAB6617C-FAC5-450E-9044-0768F67FE709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB6617C-FAC5-450E-9044-0768F67FE709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB6617C-FAC5-450E-9044-0768F67FE709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB6617C-FAC5-450E-9044-0768F67FE709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38B94CF7-ED4A-4AC3-BDA7-4B67D34BB780}
+	EndGlobalSection
+EndGlobal

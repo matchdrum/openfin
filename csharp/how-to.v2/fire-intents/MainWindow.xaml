@@ -1,0 +1,22 @@
+﻿<Window x:Class="Interop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interop"
+        mc:Ignorable="d"
+        Title="Interop Sample" Height="450" Width="800">
+    <DockPanel>
+        <Border HorizontalAlignment="Stretch" Background="Red" DockPanel.Dock="Top">
+            <Label x:Name="status" FontSize="16" Foreground="White" HorizontalAlignment="Center">Status</Label>
+        </Border>
+        <Button x:Name="connect"  Click="connect_Click" DockPanel.Dock="Top">Connect To Runtime</Button>
+        <Button x:Name="disconnect"  Click="disconnect_Click" DockPanel.Dock="Top">Disconnect From Runtime</Button>
+
+        <Button x:Name="ConnectToBroker"  Click="ConnectToBroker_Click" IsEnabled="False" DockPanel.Dock="Top">Connect to Broker</Button>
+        <Button x:Name="FireIntent"  Click="FireIntent_Click" IsEnabled="False" DockPanel.Dock="Top">Fire Intent</Button>
+        <TextBlock x:Name="txtMessages" TextWrapping="Wrap" Text="TextBlock" />
+
+
+    </DockPanel>
+</Window>

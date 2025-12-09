@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Native Automation</title>
+    <link rel="stylesheet"
+          href="./app.css" />
+    <link rel="icon"
+          type="image/x-icon"
+          href="./favicon.ico">
+</head>
+<body class="col fill gap20">
+    <header class="row spread middle">
+        <div class="col">
+            <h1>Automation Example</h1>
+            <h1 class="tag">Demonstrate a simple application.</h1>
+        </div>
+        <div class="row middle gap20">
+            <a href="https://www.openfin.co/"
+               target="_blank">
+                <img src="./icon-blue.png"
+                     alt="OpenFin"
+                     height="40px">
+            </a>
+        </div>
+    </header>
+    <main class="col fill gap20 left pad10">
+        <div id="mainContent"></div>
+    </main>
+    <script>
+    (async () => {
+      const mainContentElem = document.querySelector("#mainContent");
+      if (window.fin) {
+        mainContentElem.textContent = "Welcome to an OpenFin powered app. Runtime v" + (await window.fin.System.getVersion());
+      } else {
+        mainContentElem.textContent = "Welcome to a traditional web app.";
+      }
+    })();
+    </script>
+</body>
+
+</html>
