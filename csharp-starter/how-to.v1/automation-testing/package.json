@@ -1,0 +1,24 @@
+{
+    "name": "automation-testing-dotnet",
+    "version": "1.0.0",
+    "description": "OpenFin Workspace Starter Automation Tests for DotNet",
+    "scripts": {
+        "kill": "fkill -f -s OpenFin.Automation.Win.Sample.exe OpenFin.exe OpenFinRVM.exe",
+        "build": "dotnet build ./app/OpenFin.Automation.Win.Sample.sln",
+        "start": "cd app/bin/debug/net5.0-windows && OpenFin.Automation.Win.Sample.exe",
+        "test": "of-automation file://./harness/manifest.fin.json ./tests/**/*.spec.js --closeRuntime never",
+        "all": "npm run kill && npm run build && run-p start test && npm run kill"
+    },
+    "author": "martyn.janes@openfin.co",
+    "license": "SEE LICENSE IN LICENSE.MD",
+    "devDependencies": {
+        "@openfin/automation-cli": "^1.0.0",
+        "@openfin/automation-helpers": "^1.0.0",
+        "chai": "4.3.6"
+    },
+    "dependencies": {
+        "fkill": "7.2.1",
+        "fkill-cli": "7.1.0",
+        "npm-run-all": "4.1.5"
+    }
+}

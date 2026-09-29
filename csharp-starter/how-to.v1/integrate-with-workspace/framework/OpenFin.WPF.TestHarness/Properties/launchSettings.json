@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "OpenFin.WPF.TestHarness": {
+      "commandName": "Project"
+    }
+  }
+}
